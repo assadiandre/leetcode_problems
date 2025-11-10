@@ -1,6 +1,3 @@
-"""
-
-"""
 import math
 
 class Solution:
@@ -59,31 +56,7 @@ class Solution:
 def main():
     my_solution = Solution()
     STRING_WITH_PALINDROME = "aba"
-    is_palindrome = my_solution.is_palindrome(STRING_WITH_PALINDROME)
-    # answer = my_solution.longestPalindrome(STRING_WITH_PALINDROME)
-    print("IS PALINDROME: ", is_palindrome)
+    answer = my_solution.longestPalindrome(STRING_WITH_PALINDROME)
+    print("IS PALINDROME: ", answer)
 
 main()
-
-
-        
-
-"""
-Loop through each checking if characters next to it are the same 
-
-n^2 approach
-
-if s[n + 1] and s[n - 1] are the same THEN:
-    s[n - 1]
-    s[n + 1]
-else if s[n + 1] = s[n] THEN:
-    s[n + 1]
-    s[n]
-else if s[n - 1] = s[n] THEN:
-    s[n - 1]
-    s[n]
-
-You are a palindrome if both ends of the string are the same so
-you should loop through both ends and check if each is the longest
-
-"""
